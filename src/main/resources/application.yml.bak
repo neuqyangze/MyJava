@@ -1,0 +1,11 @@
+spring:
+  datasource:
+    name: activiti5
+    url: jdbc:mysql://localhost:3306/activiti5?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
+    username: root
+    password: root
+    driver-class-name: com.mysql.jdbc.Driver
+
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+  type-aliases-package: com.yangze.boot.bean
