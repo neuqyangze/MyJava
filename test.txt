@@ -1,4 +1,12 @@
 just test
 
-
 once again
+
+CREATE TABLE `user` (
+  `id` int(10) NOT NULL AUTO_INCREMENT,
+  `name` varchar(30) NOT NULL,
+  `password` varchar(100) NOT NULL,
+  PRIMARY KEY (`id`) USING BTREE
+) COMMENT 'test user table';
+
+INSERT INTO `user` (`id`, `name`, `password`) VALUES (1, 'a', 'a');
